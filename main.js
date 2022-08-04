@@ -56,14 +56,41 @@ console.log(jmena)
 console.log(jmenoOdebraneZKonce)
 
 // - pridat na zacatek
+// pole.unshift()
 
-jmena.unshift('Slizoun')
 jmena.unshift('Kýchal')
+jmena.unshift('Slizoun')
 
 console.log(jmena)
 
 // - odebrat ze zacatku
+
+jmena.shift()
+console.log(jmena)
+
+// pro "specialni" lidi
+jmena.unshift('Šmoulinka')
+console.log(jmena)
+
 // - vrátit kousek pole od-do
+// pole.slice(od, do)
+// prvek na indexu "od" v novem poli bude
+// prvek na indexu "do" je prvni, ktery v novem poli uz nebude
+
+let novaJmena = jmena.slice(2, 8)
+console.log(novaJmena)
+
+
 // Práce s polem v cyklu
 
+for ( let i = 0 ; i < 4 ; i++ ) {
+	console.log('Ahojda jahoda')
+}
+
+
+for ( let i = 0 ; i < jmena.length ; i++ ) {
+
+	console.log( 'šmoula č. ' + (i + 1) + ' se jmenuje ' + jmena[i]  )
+
+}
 
